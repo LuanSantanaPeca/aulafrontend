@@ -46,15 +46,15 @@
 
 .subTitle{
     margin-bottom: 0;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 700;
 }
 
 .paragraph{
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 25px;
 }
-.paragraph a{
+.paragraph {
     color: #FFF;
 }
 
@@ -63,4 +63,12 @@
     justify-self: right;
     justify-content: end;
     margin-top: 20px;
+}
+#metalica{
+    width: 100%;
+    margin-top: 20px;
+}
+#linha{
+    margin-top: 15px;
+    font-size: 25px;    
 }
