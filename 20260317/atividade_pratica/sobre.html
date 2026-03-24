@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="description" content="Banda solo especializada em covers do Metallica para eventos públicos e privados">
+    <title>Solo Cover Metallica - Home</title>
     <link rel="stylesheet" href="css/estilo.css">
     <style>
         body{
@@ -13,34 +14,51 @@
         h1{
             display: flex;
             justify-content: center;
-            align-items: start;
+            align-items: center;
+            margin: 0;
+        }
+        h1 img {
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <nav id="menu">
+    <nav id="menu" role="navigation" aria-label="Menu principal">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li id="active">Sobre</li>
+            <li><a href="./index.html" aria-current="page">Home</a></li>
+            <li id="active" aria-current="true">Sobre</li>
             <li><a href="./contato.html">Contato</a></li>
         </ul>
     </nav>
 
     <header>
-        <h1 style="text-align: center; font-size: 60px;"><img src="imgs/metallica-logo.png" width="300">Solo Cover</h1>
+        <h1>
+            <h1 style="text-align: center; font-size: 60px;"><img src="imgs/metallica-logo.png" width="300">Solo Cover</h1>
+        </h1>
     </header>
 
-    <h2 class="subTitle">Meu Trabalho</h2>
-    <p class="paragraph">
-        Sou uma banda de um homem só que se especializa em músicas da Grande Banda de Rock Metallica. Atendo eventos públicos e privados, com pelo menos dois dias de antecedência na 
-        contratação de meus serviços. Para orçamentos ou outras dúvidas veja a página de contato na barra superior ou clique <a href="contato.html">aqui</a>.
-    </p>
+    <main>
+        <section>
+            <h2 class="subTitle">Meu Trabalho</h2>
+            <p class="paragraph">
+                Sou uma <strong>banda de um homem só</strong> que se especializa em músicas da <strong>grande banda de Rock Metallica</strong>. 
+                Atendo eventos públicos e privados, com <em>pelo menos dois dias de antecedência</em> na contratação dos meus serviços. 
+                Para orçamentos ou outras dúvidas, acesse a página de <a href="contato.html">Contato</a> na barra superior.
+            </p>
+        </section>
 
-    <h2 class="subTitle">Portfólio</h2>
-    <p class="paragraph">Chegando em Breve!</p>
+        <section>
+            <h2 class="subTitle">Portfólio</h2>
+            <p class="paragraph">Criado em 2026!</p>
+            <p id="linha">Criados em 2026! Para falar sobre como a metalica influenciou no rock!!</p>
+            <p id="linha">O Metallica revolucionou o rock e o heavy metal ao popularizar o thrash metal nos anos 80 e,</p>
+            <p id="linha">posteriormente, elevar o metal ao mainstream com o "Black Album" (1991), unindo peso, acessibilidade e </p>
+            <p id="linha">grandiosidade técnica. Eles moldaram o som moderno, influenciaram a produção musical e se tornaram um gigante do rock de arena.</p>
+        </section>
+    </main>
 
-    <footer id="footer">
-        <small>Todos os direitos reservados a seus devidos criadores.</small>
+    <footer id="footer" role="contentinfo">
+        <small>&copy; 2024 Todos os direitos reservados aos seus devidos criadores.</small>
     </footer>
 </body>
 </html>
