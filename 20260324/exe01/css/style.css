@@ -1,0 +1,57 @@
+|*{
+    position: relative;
+}
+body{
+    background-image: url("../img/image.png");
+}
+p{
+    color: blue
+}
+h2{
+    color: #00ffe0;
+}
+h1{
+    color: rgba(255, 100, 100, 100);
+}
+
+#link{
+    justify-self: center;
+    text-align: center;
+}
+
+.caixa1{
+    text-align: center;
+    position: absolute;
+    top: 50%; left: 50%;
+    z-index: -1;
+    justify-self: center;
+    animation-duration: 1s;
+    animation-name: spinEarth;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.caixa1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spinEarth{
+    from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
