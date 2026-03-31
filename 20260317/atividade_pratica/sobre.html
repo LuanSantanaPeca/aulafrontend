@@ -3,56 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Banda solo especializada em covers do Metallica para eventos públicos e privados">
-    <title>Solo Cover Metallica - Home</title>
+    <meta name="description" content="Banda solo especializada em covers do Metallica">
+    <title>Solo Cover - Sobre</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <style>
-        body{
-            padding: 10px 30px;
-            background-color: rgb(22, 22, 20);
-        }
-        h1{
-            display: flex;
-            justify-content: center;
-            align-items: start;
-        }
-    </style>
 </head>
 <body>
-    <nav id="menu" role="navigation" aria-label="Menu principal">
+    <nav id="menu">
         <ul>
-            <li><a href="./index.html" aria-current="page">Home</a></li>
-            <li id="active" aria-current="true">Sobre</li>
-            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html" class="active">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
 
     <header>
-        <h1 style="text-align: center; font-size: 60px;"><img src="imgs/metallica-logo.png" width="300">Solo Cover</h1>
+        <h1><img src="imgs/metallica-logo.png" alt="Logo Metallica" width="300"> Solo Cover</h1>
     </header>
 
-    <main>
-        <section>
-            <h2 class="subTitle">Meu Trabalho</h2>
+    <main class="main-container">
+        <section class="section-box">
+            <h2 class="subTitle">Nosso trabalho</h2>
+            <br>
             <p class="paragraph">
                 Sou uma <strong>banda de um homem só</strong> que se especializa em músicas da <strong>grande banda de Rock Metallica</strong>. 
                 Atendo eventos públicos e privados, com <em>pelo menos dois dias de antecedência</em> na contratação dos meus serviços. 
-                Para orçamentos ou outras dúvidas, acesse a página de <a href="contato.html">Contato</a> na barra superior.
             </p>
         </section>
 
-        <section>
+        <section class="section-box">
+            <br>
             <h2 class="subTitle">História</h2>
-            <p class="paragraph">Criado em 2026!</p>
-            <p id="linha">Para falar e mostrar como o Metalica influenciou no rock!!</p>
-            <p id="linha">O Metallica revolucionou o rock e o heavy metal ao popularizar o thrash metal nos anos 80 e,</p>
-            <p id="linha">posteriormente, elevar o metal ao mainstream com o "Black Album" (1991), unindo peso, acessibilidade e </p>
-            <p id="linha">grandiosidade técnica. Eles moldaram o som moderno, influenciaram a produção musical e se tornaram um gigante do rock de arena.</p>
+            <br>
+            <p class="paragraph highlighted-text">Criado em 2026!</p>
+            <p class="history-text">
+                O Metallica revolucionou o rock e o heavy metal ao popularizar o thrash metal nos anos 80 e, 
+                posteriormente, elevar o metal ao mainstream com o "Black Album" (1991), unindo peso e grandiosidade técnica.
+            </p>
+            <p class="history-text">Eles moldaram o som moderno e se tornaram um gigante do rock de arena.</p>
         </section>
     </main>
 
-    <footer id="footer" role="contentinfo">
-        <img id="metalica" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVCf02jsNFlRHL5THq6FjIbHTyPQcWBLdViQ&s" alt="Metalica">
+    <footer id="footer">
+        <img id="metalica" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVCf02jsNFlRHL5THq6FjIbHTyPQcWBLdViQ&s" alt="Logo Footer">
         <small>&copy; 2026 Todos os direitos reservados aos seus devidos criadores.</small>
     </footer>
 </body>
