@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Solo Cover - Contato</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <style>
-        body{
-            padding: 10px 30px;
-            background-color: rgb(22, 22, 20);
-        }
-        h1{
-            display: flex;
-            justify-content: center;
-            align-items: start;
-        }
-    </style>
 </head>
 <body>
     <nav id="menu">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./sobre.html">Sobre</a></li>
-            <li id="active">Contato</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html" class="active">Contato</a></li>
         </ul>
     </nav>
 
     <header>
-        <h1 style="text-align: center; font-size: 60px;"><img src="imgs/metallica-logo.png" width="300">Solo Cover</h1>
+        <h1><img src="imgs/metallica-logo.png" alt="Logo Metallica" width="300"> Solo Cover</h1>
     </header>
 
-    <p class="paragraph">Para consulta de orçamento mande um e-mail para: <a href="mailto:luanenricopeca@gmail.com" target="_blank">luanenricopeca@gmail.com</a> e <a href="mailto:spohre3@gmail.com" target="_blank">spohre3@gmail.com</a></p>
-    <p class="paragraph">Para dúvidas e esclarecimentos mande mensagem para: <a href="https://wa.me/41999170543" target="_blank">(41) 99917-0543</a> e <a href="https://wa.me/41995602292" target="_blank">(41) 99560-2292</a> </p> 
+    <main class="contact-area">
+        <div class="contact-card">
+            <h2 class="subTitle">Orçamentos</h2>
+            <p class="paragraph">Mande um e-mail para:</p>
+            <a href="mailto:luanenricopeca@gmail.com" class="link-button">luanenricopeca@gmail.com</a>
+            <a href="mailto:spohre3@gmail.com" class="link-button">spohre3@gmail.com</a>
+        </div>
+
+        <div class="contact-card">
+            <h2 class="subTitle">Dúvidas</h2>
+            <p class="paragraph">WhatsApp:</p>
+            <a href="https://wa.me/41999170543" target="_blank" class="link-wa">(41) 99917-0543</a>
+            <a href="https://wa.me/41995602292" target="_blank" class="link-wa">(41) 99560-2292</a>
+        </div>
+    </main>
 
     <footer id="footer">
-        <small>Todos os direitos reservados a seus devidos criadores.</small>
+        <img id="metalica" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVCf02jsNFlRHL5THq6FjIbHTyPQcWBLdViQ&s" alt="Logo Footer">
+        <small>&copy; 2026 Todos os direitos reservados aos seus devidos criadores.</small>
     </footer>
 </body>
 </html>
