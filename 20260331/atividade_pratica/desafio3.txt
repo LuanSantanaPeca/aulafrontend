@@ -1,0 +1,24 @@
+A utilização do display:flex teve, majoritariamente, um efeito muito positivo tanto no nível de customização quanto na
+responsividade quando comparada com a utilização do display:block, inline ou inline-block.
+
+A principal diferença observada é, ao mesmo tempo, a principal característica da flexbox: o tamanho dos elementos se
+baseia em seu conteúdo. A partir disso é possível criar contêineres que se adaptam à largura e altura da tela quase
+automaticamente, só não sendo viável em casos extremos. Isso, somado a propriedades que ditam o alinhamento e 
+justificação dos elementos, faz com que o display:flex possa ser usado para praticamente qualquer tipo de interface:
+menus, listas de cards, tabelas, etc.
+
+No caso desse projeto específico, algumas melhoras mais expressivas foram observadas. 
+
+O menu, originalmente, tinha um aspecto "empilhado", com um link verticalmente em cima do outro, o que toma bastante 
+espaço na tela e não é otimizado. Com display:inline, os elementos ficam na mesma linha horizontal, mas não podem 
+mais ter seu tamanho facilmente ajustado. Com a utilização de display:flex, foi possível definir uma largura mínima 
+desejada para os elementos, colocar eles em uma única linha horizontal e ainda definir um espaçamento entre cada um
+dos links. Características todas essas que se ajustarão conforme o tamanho da tela do usuário. Nos cards permitiu 
+não só que fossem alinhados na horizontal, mas também que o layout utilizasse mais de uma linha se necessário, 
+essencialmente tornando essa secção uma grid mais adaptativa.
+
+No entanto, dependendo da estrutura montada pelo desenvolvedor, o display:flex pode necessitar de algumas adaptações
+quando sendo utilizado, principalmente da adição de mais divs para se obter um efeito específico desejado. Para um
+programador familiar com a estrutura HTML e estilização CSS isso não será um problema, mas pode causar certa confusão
+e dificuldade em iniciantes. Dificuldades essas que, se superadas, abrem portas para um nível de controle muito maior
+sobre suas criações.
