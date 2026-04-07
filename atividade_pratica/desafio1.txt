@@ -1,0 +1,39 @@
+display: flex é o comando que define o display como usando a lógica flexbox para o alinhamento dos elementos.
+O flexbox, por sua vez, é um modelo de layout unidimensional, significando que lida com somente uma dimensão
+(linhas ou colunas) de cada vez.
+A área de uma aplicação web que utiliza a lógica flexbox é chamada de contêiner flex, enquanto os itens que
+compõem esse contêiner são chamados de itens flex. Essencialmente, quando definidos como flex, tanto contêineres
+quanto itens serão alinhados em um linha, usando o tamanho do conteúdo de cada um para criar divisões. Se houver
+mais conteúdo que é possível caber no contêiner não haverá quebra de linha, mas os itens ultrapassarão os
+limites da página. Caso algum elemento seja maior do que os outros, os elementos menores se esticarão até se
+igualarem ao maior elemento da seccão.
+
+Por padrão, todo contêiner e item flex alinha seus conteúdos em uma linha (horizontal), no início do eixo
+principal, com expansão vertical para preencher a altura, sem quebras de linha. Todas essas características
+podem ser alteradas definindo comandos específicos:
+
+- flex-direction -> row | column | row-reverse | column-reverse: determina a direção e ordem em que os elementos
+serão apresentados. Row é o padrão, e os alinha na horizontal, enquanto column os alinha na vertical. O -reverse
+faz com que o último item se torne o primeiro na visualização, e assim por diante.
+
+- justify-content -> strech | flex-start | flex-end | center | space-around | space-between: alinha os elementos
+no eixo principal. Space-between ocupa todo o espaço disponível após a disposição de elementos e divide ele
+igualmente entre todos. Space-around gera uma quantidade igual à esquerda e à direita 
+
+- align-items -> strech | flex-start | flex-end | center: alinha os elementos no eixo transversal (vertical caso
+flex-direction: row e horizontal caso flex-direction: column). Por padrão é stretch, por isso os elementos se
+esticam para preencher todo o espaço definido. Flex-start alinha com o topo do contêiner, enquanto flex-end com
+o final dele. Center centraliza.
+
+- flex-wrap -> nowrap | wrap | wrap-reverse: essencialmente, determina se os elementos podem ocupar mais de
+uma linha caso sejam muito largos para caber em uma só. O padrão, nowrap, não permite esse comportamento, fazendo
+com que os itens "vazem" para fora do contêiner. Wrap permite que a "quebra de linha" aconteça caso necessário,
+enquanto wrap-reverse permite esse comportamento, mas que os itens estarão em ordem invertida.
+
+- gap -> medida em porcentagem, pixels, etc: define uma "distância mínima" entre os elementos do contêiner flex.
+Independentemente de outras configurações como justify-content e align-items devem respeitar a distância
+especificada, fazendo possível separar os elementos de forma mais confiável.
+
+- align content -> stretch | center | flex-start | flex-end | space-between | space-around | space-evenly:
+Funciona como justify-content, mas para o eixo transversal ao invés do normal. Space-evenly distributes 
+lines with equal spacing around them.
