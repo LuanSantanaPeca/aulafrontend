@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BASICO II</title>
+</head>
+<body>
+    <h2>JS BÁSICO II</h2>
+    <p>link JS externo</p>
+    <img src="./imgs/img.png" width="170" height="100" />
+
+    <br><br>
+
+    <div id="exe01">
+        <h1>EXE 01 - Calculadora</h1>
+        <input type="number" name="num1" placeholder="Digite um número" id="num1"><br><br>
+        <input type="number" name="num2" placeholder="Digite outro número" id="num2"><br><br>
+        <button onClick="calcularSoma()">Calcular Soma</button>
+        <button onClick="calcularSubtracao()">Calcular Subtração</button>
+        <button onClick="calcularMultiplicacao()">Calcular Multiplicação</button>
+        <button onClick="calcularDivisao()">Calcular Divisão</button>
+        <p>Resultado: <span id="resultado"></span></p>
+    </div>
+
+    <br><br>
+
+    <div id="exe02">
+        <h1>EXE 02 - Cálculo de médias</h1>
+        <span>Digite os números separados por barra (/):</span>
+        <input type="text" name="avg" placeholder="1/2/3" id="avg"><br><br>
+        <button onClick="calcularMedia()">Calcular Média</button>
+        <p>Resultado: <span id="resultado2"></span></p>
+    </div>
+
+    <br><br>
+
+    <div id="exe03">
+        <h1>EXE 03 - Verifica o maior</h1>
+        <span>Digite os números separados por barra (/):</span>
+        <input type="number" name="value1" placeholder="Digite um número" id="value1"><br><br>
+        <input type="number" name="value2" placeholder="Digite um número" id="value2"><br><br>
+        <input type="number" name="value3" placeholder="Digite um número" id="value3"><br><br>
+        <button onClick="verificaMaior()">Verificar o maior valor</button>
+        <p>Resultado: <span id="resultado3"></span></p>
+    </div>
+
+    <script src="./js/script1.js"></script>
+    <script src="./js/script2.js"></script>
+</body>
+</html>
