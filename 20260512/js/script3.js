@@ -1,15 +1,13 @@
 function verificaMaior(){
-  const nums = document.getElementById('maior');
-  let numsList = nums.value.split('/');
+  const value1 = document.getElementById('value1').valueAsNumber;
+  const value2 = document.getElementById('value2').valueAsNumber;
+  const value3 = document.getElementById('value3').valueAsNumber;
   let maior;
 
-  for(let i=0; i<numsList.length-1; i++){
-    if(numsList[i+1] > numsList[i]){
-      maior = numsList[i+1];
-    }else{
-      maior = numsList[i];
-    }
-  }
+  if(value1 > value2) maior = value1;
+  else maior = value2;
+
+  if(value3 > maior) maior = value3;
 
   document.getElementById('resultadoMaior').innerText = maior;
 }
