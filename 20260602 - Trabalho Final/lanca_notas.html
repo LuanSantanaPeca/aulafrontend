@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancamento de Notas</title>
+    <link href="./css/style.css" rel="stylesheet"></link>
+    <link href="./css/navbar.css" rel="stylesheet"></link>
+</head>
+<body>
+    <header>
+        <h1>Portal Academico</h1>
+        <h3>Faculdade de Tecnologia</h3>
+        <div class="navbar" id="navbar"></div>
+    </header>
+
+    <div class="container">
+        <div class="box-cadastro card">
+            <h2 class="titulo">Lançamento de Notas</h2>
+            <div class="inputs">
+                <div class="campo">
+                    <label for="nome-aluno">Aluno</label>
+                    <input type="text" id="nome-aluno">
+                </div>
+
+                <div class="campo">
+                    <label for="cursos">Curso</label>
+                    <select name="" id="cursos">
+                        <option value="" hidden>Selecione um curso</option>
+                        <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                        <option value="eng-software">Engenharia de Software</option>
+                        <option value="biotec">Biotecnologia</option>
+                        <option value="ciencia-comp">Ciência da Computação</option>
+                        <option value="sistemas-info">Sistemas de Informação</option>
+                        <option value="eng-computacao">Engenharia da Computação</option>
+                        <option value="redes">Redes de Computadores</option>
+                        <option value="seguranca">Segurança da Informação</option>
+                        <option value="banco-dados">Banco de Dados</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="nota1">Nota 1</label>
+                    <input type="number" id="nota1">
+                </div>
+
+                <div class="campo">
+                    <label for="nota 2">Nota 2</label>
+                    <input type="number" id="nota2">
+                </div>
+            </div>
+            <button id="lancar-notas">Lançar Notas</button>
+        </div>
+    </div>
+
+    <script src="js/navbar.js"></script>
+    <script type="module" src="js/lanca_notas.js"></script>
+</body>
+</html>
