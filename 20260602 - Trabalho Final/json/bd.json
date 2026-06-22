@@ -1,4 +1,5 @@
-[
+{
+  "alunos": [
     {
       "nome": "Luan Enrico Santana Peça",
       "curso": "eng-software",
@@ -63,3 +64,4 @@
       "id": 7
     }
   ]
+}
