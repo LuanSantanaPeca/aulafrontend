@@ -1,13 +1,13 @@
 {
     "version": 2,
     "functions": {
-        "api/**/*.js": {
+        "api/handler.js": {
             "includeFiles": "json/bd.json"
         }
     },
     "rewrites": [
-        { "source": "/alunos", "destination": "/api/alunos" },
-        { "source": "/alunos/:id", "destination": "/api/alunosbyid?id=:id" },
+        { "source": "/alunos", "destination": "/api/handler" },
+        { "source": "/alunos/:id", "destination": "/api/handler?id=:id" },
         { "source": "/cadastro", "destination": "/cadastro.html" },
         { "source": "/notas", "destination": "/notas.html" },
         { "source": "/relatorios", "destination": "/relatorios.html" },
