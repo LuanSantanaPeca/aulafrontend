@@ -1,0 +1,10 @@
+{
+    "name": "portal-academico",
+    "private": true,
+    "scripts": {
+        "start": "json-server --watch json/bd.json --static ./ --port 3000"
+    },
+    "devDependencies": {
+        "json-server": "^0.17.4"
+    }
+}
