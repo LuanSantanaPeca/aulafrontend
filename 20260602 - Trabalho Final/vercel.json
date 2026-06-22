@@ -2,7 +2,7 @@
     "version": 2,
     "rewrites": [
         { "source": "/alunos", "destination": "/api/alunos" },
-        { "source": "/alunos/:id", "destination": "/api/alunos/[id]" },
+        { "source": "/alunos/:id", "destination": "/api/alunosbyid?id=:id" },
         { "source": "/cadastro", "destination": "/cadastro.html" },
         { "source": "/notas", "destination": "/notas.html" },
         { "source": "/relatorios", "destination": "/relatorios.html" },
