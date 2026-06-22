@@ -1,5 +1,10 @@
 {
     "version": 2,
+    "functions": {
+        "api/**/*.js": {
+            "includeFiles": "json/bd.json"
+        }
+    },
     "rewrites": [
         { "source": "/alunos", "destination": "/api/alunos" },
         { "source": "/alunos/:id", "destination": "/api/alunosbyid?id=:id" },
