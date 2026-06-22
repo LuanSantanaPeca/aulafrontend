@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, input, select{
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    /* min-height: calc(70vh - 180px);
+     */
+     
+    /* min-height: calc(100vh - 180px); */
+}
+
+.titulo{
+    color: rgb(34, 34, 127);
+}
+.back-link{
+    color: white;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.card{
+    margin: 20px 150px 0 150px;
+    padding: 20px;
+    min-height: 150px;
+
+    background-color: rgb(230, 220, 230);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subcard{
+    margin: 30px 30px;
+    padding: 20px;
+    min-height: 150px;
+
+    background-color: rgb(210, 200, 210);
+    border-radius: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.campo-date input[type="date"] {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.campo-date input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.inputs {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+
+    flex: 0.8;
+}
+
+input, select{
+    /* margin-bottom: 10px; */
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+
+button{
+    background-color: rgb(34, 34, 127);
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px;
+    align-self: flex-start;
+    transition: transform 0.1s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+label{
+    font-weight: bold;
+}
+
+.box-cadastro{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.sobre{
+    gap: 10px;
+}
+.equipe{
+    /* padding: 0px; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    gap: 30px;
+    margin: 50px 120px 50px;
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
+.membro{
+    width: 350px;
+    padding: 25px;
+
+    background-color: rgb(230, 220, 230);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.RA{
+    color: rgb(112, 112, 112);
+    font-weight: bold;
+}
+
+.table-header{
+    background-color: rgb(57, 57, 137);
+    color: white;
+    text-align: center;
+}
+.table-header th{
+    padding: 10px 0px;
+}
+.sortable {
+    cursor: pointer;
+    user-select: none;
+}
+.sortable.sort-asc::after {
+    content: ' ▼';
+}
+.sortable.sort-desc::after {
+    content: ' ▲';
+}
+.table-row{
+    background-color: rgb(230, 220, 230);
+    text-align: center;
+}
+.delete-button{
+    background-color: rgb(163, 23, 23);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 16px;
+    align-self: flex-start;
+    transition: transform 0.1s ease;
+}
+.delete-button:hover{
+    transform: scale(1.1);
+}
+.edit-button{
+    background-color: rgb(211, 172, 0);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 16px;
+    align-self: flex-start;
+    transition: transform 0.1s ease;
+}
+.edit-button:hover{
+    transform: scale(1.1);
+}
+.notas-button{
+    background-color: rgb(57, 57, 137);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 16px;
+    align-self: flex-start;
+    transition: transform 0.1s ease;
+}
+.notas-button:hover{
+    transform: scale(1.1);
+}
+
+.table, .alunos-cadastrados, .notas-table{
+    width: 100%;
+}
+
+
+.aprovado{
+    color: green;
+}
+.recuperacao{
+    color: rgb(255, 174, 0);
+}
+.reprovado{
+    color: red;
+}
+
+.relatorios-page {
+    gap: 16px;
+}
+
+.relatorio-dropdown {
+    background-color: rgb(210, 200, 210);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.relatorio-dropdown-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 16px 20px;
+    background-color: rgb(57, 57, 137);
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    align-self: stretch;
+}
+
+.relatorio-dropdown-header:hover {
+    transform: none;
+    background-color: rgb(45, 45, 115);
+}
+
+.relatorio-dropdown-icon {
+    transition: transform 0.3s ease;
+}
+
+.relatorio-dropdown.open .relatorio-dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.relatorio-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.relatorio-dropdown.open .relatorio-dropdown-content {
+    max-height: 800px;
+}
+
+.relatorio-list {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.relatorio-list li,
+.relatorio-top5-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 14px;
+    background-color: rgb(230, 220, 230);
+    border-radius: 12px;
+}
+
+.relatorio-label {
+    font-weight: bold;
+}
+
+.relatorio-value {
+    color: rgb(34, 34, 127);
+    font-weight: bold;
+}
+
+.relatorio-top5-table {
+    display: table;
+    width: calc(100% - 40px);
+    margin: 20px;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.relatorio-top5-table .table-row td,
+.relatorio-top5-table .table-header th {
+    padding: 10px;
+}
+
+.relatorio-empty {
+    padding: 20px;
+    text-align: center;
+}
