@@ -160,6 +160,16 @@ label{
     color: rgb(112, 112, 112);
     font-weight: bold;
 }
+.membro-img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+.membro-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .table-header{
     background-color: rgb(57, 57, 137);
